@@ -30,4 +30,5 @@ repositories {
 dependencies {
 	compile(group: 'org.springframework.cloud', name: 'spring-cloud-config-server', version: '1.1.0.RELEASE')
     compile(group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: springBootVersion)
+    compile project(':ribbon-consul-client')
 }

@@ -17,7 +17,7 @@ spring:
           uri: https://github.com/prsdklkrn/ppk-configs.git
           username: 15bfc7a92abc7ea25cbbdbb146327a1d3d66730c
           password: 
-          searchPaths: config-*
+          searchPaths: ppk-*
   profiles:
     active: local
           
