@@ -1,0 +1,25 @@
+server:
+  contextPath: /configserver
+  port: 8888
+consul:
+  register:
+    service: 
+      enabled: true
+      name: config-server
+endpoints:
+  health:
+    sensitive: false
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/prsdklkrn/ppk-configs.git
+          username: 15bfc7a92abc7ea25cbbdbb146327a1d3d66730c
+          password: 
+          searchPaths: config-*
+  profiles:
+    active: local
+          
+management:
+  contextPath: /actuator
