@@ -18,8 +18,6 @@ spring:
           username: 15bfc7a92abc7ea25cbbdbb146327a1d3d66730c
           password: 
           searchPaths: ppk-*
-  profiles:
-    active: local
-          
+          cloneOnStart: true
 management:
   contextPath: /actuator
